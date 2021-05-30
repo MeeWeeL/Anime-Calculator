@@ -8,7 +8,6 @@
 
     <TextView
         android:id="@+id/calcResult"
-        android:text="@string/_0"
         android:textSize="10sp"
         android:layout_width="0dp"
         android:layout_height="0dp"
