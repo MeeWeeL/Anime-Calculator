@@ -7,15 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
     <ImageView
+        android:scaleType="centerCrop"
         android:id="@+id/background"
-        android:src="@drawable/aniland5"
+        android:src="@drawable/anig14"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:contentDescription="@string/todo" />
 
     <include
         layout="@layout/calculator"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="120dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_width="match_parent"

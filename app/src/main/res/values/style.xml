@@ -1,10 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="calcButtons">
-        <item name="android:textSize">30dp</item>
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">0dp</item>
-        <item name="android:backgroundTint">#ffaf00</item>
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar.FullScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="numButtons">
+        <item name="android:textSize">@dimen/sp_30</item>
+        <item name="android:layout_width">@dimen/zero_dp</item>
+        <item name="android:layout_height">@dimen/zero_dp</item>
+        <item name="android:backgroundTint">@color/soft_nums</item>
         <item name="android:onClick">btn</item>
+        <item name="android:textColor">@color/soft_text</item>
+    </style>
+    <style name="moveButtons">
+        <item name="android:textSize">@dimen/sp_30</item>
+        <item name="android:layout_width">@dimen/zero_dp</item>
+        <item name="android:layout_height">@dimen/zero_dp</item>
+        <item name="android:backgroundTint">@color/soft_move</item>
+        <item name="android:onClick">btn</item>
+        <item name="android:textColor">@color/soft_text</item>
+    </style>
+    <style name="specButtons">
+        <item name="android:textSize">@dimen/sp_30</item>
+        <item name="android:layout_width">@dimen/zero_dp</item>
+        <item name="android:layout_height">@dimen/zero_dp</item>
+        <item name="android:backgroundTint">@color/soft_spec</item>
+        <item name="android:onClick">btn</item>
+        <item name="android:textColor">@color/soft_text</item>
+    </style>
+    <style name="critButtons">
+        <item name="android:textSize">@dimen/sp_30</item>
+        <item name="android:layout_width">@dimen/zero_dp</item>
+        <item name="android:layout_height">@dimen/zero_dp</item>
+        <item name="android:backgroundTint">@color/soft_crit</item>
+        <item name="android:onClick">btn</item>
+        <item name="android:textColor">@color/soft_text</item>
     </style>
 </resources>
