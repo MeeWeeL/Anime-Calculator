@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
     <ImageView
-        android:scaleType="centerCrop"
         android:id="@+id/background"
         android:src="@drawable/anig14"
         android:layout_width="match_parent"
