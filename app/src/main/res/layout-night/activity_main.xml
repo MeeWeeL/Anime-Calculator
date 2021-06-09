@@ -7,6 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/background"
+        android:src="@drawable/anig14"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/todo" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,12 +37,6 @@
             android:textSize="@dimen/sp_30"
             android:text=""/>
     </LinearLayout>
-    <ImageView
-        android:id="@+id/background"
-        android:src="@drawable/anig14"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:contentDescription="@string/todo" />
 
     <include
         layout="@layout/calculator"
