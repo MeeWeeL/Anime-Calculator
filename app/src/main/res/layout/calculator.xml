@@ -26,9 +26,7 @@
         app:layout_constraintTop_toBottomOf="@+id/calcResult"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn2"
-        app:layout_constraintBottom_toTopOf="@+id/btn1"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintVertical_weight="1"/>
+        app:layout_constraintBottom_toTopOf="@+id/btn1"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnQuad"
@@ -38,9 +36,7 @@
         app:layout_constraintTop_toBottomOf="@+id/calcResult"
         app:layout_constraintStart_toEndOf="@+id/btnPercent"
         app:layout_constraintEnd_toStartOf="@+id/btnRoot"
-        app:layout_constraintBottom_toTopOf="@+id/btn2"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintVertical_weight="1"/>
+        app:layout_constraintBottom_toTopOf="@+id/btn2"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnRoot"
@@ -49,9 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/calcResult"
         app:layout_constraintStart_toEndOf="@+id/btnQuad"
         app:layout_constraintEnd_toStartOf="@+id/btnC"
-        app:layout_constraintBottom_toTopOf="@+id/btn3"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintVertical_weight="1"/>
+        app:layout_constraintBottom_toTopOf="@+id/btn3"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnC"
@@ -60,9 +54,7 @@
         app:layout_constraintTop_toBottomOf="@+id/calcResult"
         app:layout_constraintStart_toEndOf="@+id/btnRoot"
         app:layout_constraintEnd_toStartOf="@+id/btnDel"
-        app:layout_constraintBottom_toTopOf="@+id/btnX"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintVertical_weight="1"/>
+        app:layout_constraintBottom_toTopOf="@+id/btnX"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnDel"
@@ -72,8 +64,7 @@
         app:layout_constraintStart_toEndOf="@+id/btnC"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/btnPlus"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintVertical_weight="1" />
+        app:layout_constraintHorizontal_weight="1"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn1"
@@ -83,9 +74,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnPercent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn2"
-        app:layout_constraintBottom_toTopOf="@+id/btn4"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintVertical_weight="1"/>
+        app:layout_constraintBottom_toTopOf="@+id/btn4"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn2"
@@ -95,9 +84,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnQuad"
         app:layout_constraintStart_toEndOf="@id/btn1"
         app:layout_constraintEnd_toStartOf="@+id/btn3"
-        app:layout_constraintBottom_toTopOf="@+id/btn5"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintVertical_weight="1"/>
+        app:layout_constraintBottom_toTopOf="@+id/btn5"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn3"
@@ -106,9 +93,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnRoot"
         app:layout_constraintStart_toEndOf="@id/btn2"
         app:layout_constraintEnd_toStartOf="@+id/btnX"
-        app:layout_constraintBottom_toTopOf="@+id/btn6"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintVertical_weight="1"/>
+        app:layout_constraintBottom_toTopOf="@+id/btn6"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnX"
@@ -117,9 +102,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnC"
         app:layout_constraintStart_toEndOf="@id/btn3"
         app:layout_constraintEnd_toStartOf="@+id/btnPlus"
-        app:layout_constraintBottom_toTopOf="@+id/btnDep"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintVertical_weight="1"/>
+        app:layout_constraintBottom_toTopOf="@+id/btnDep"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnPlus"
@@ -128,9 +111,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnDel"
         app:layout_constraintStart_toEndOf="@id/btnX"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/btnMinus"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintVertical_weight="1"/>
+        app:layout_constraintBottom_toTopOf="@+id/btnMinus"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn4"
@@ -139,9 +120,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btn1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn5"
-        app:layout_constraintBottom_toTopOf="@+id/btn7"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintVertical_weight="1"/>
+        app:layout_constraintBottom_toTopOf="@+id/btn7"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn5"
@@ -150,9 +129,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btn2"
         app:layout_constraintStart_toEndOf="@id/btn4"
         app:layout_constraintEnd_toStartOf="@+id/btn6"
-        app:layout_constraintBottom_toTopOf="@+id/btn8"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintVertical_weight="1"/>
+        app:layout_constraintBottom_toTopOf="@+id/btn8"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn6"
@@ -161,9 +138,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btn3"
         app:layout_constraintStart_toEndOf="@id/btn5"
         app:layout_constraintEnd_toStartOf="@+id/btnDep"
-        app:layout_constraintBottom_toTopOf="@+id/btn9"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintVertical_weight="1"/>
+        app:layout_constraintBottom_toTopOf="@+id/btn9"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnDep"
@@ -172,9 +147,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnX"
         app:layout_constraintStart_toEndOf="@id/btn6"
         app:layout_constraintEnd_toStartOf="@+id/btnMinus"
-        app:layout_constraintBottom_toTopOf="@+id/btnEqual"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintVertical_weight="1"/>
+        app:layout_constraintBottom_toTopOf="@+id/btnEqual"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnMinus"
@@ -183,9 +156,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnPlus"
         app:layout_constraintStart_toEndOf="@id/btnDep"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/btnEqual"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintVertical_weight="1"/>
+        app:layout_constraintBottom_toTopOf="@+id/btnEqual"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn7"
@@ -194,9 +165,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btn4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn8"
-        app:layout_constraintBottom_toTopOf="@+id/btn0"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintVertical_weight="1"/>
+        app:layout_constraintBottom_toTopOf="@+id/btn0"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn8"
@@ -205,9 +174,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btn5"
         app:layout_constraintStart_toEndOf="@id/btn7"
         app:layout_constraintEnd_toStartOf="@+id/btn9"
-        app:layout_constraintBottom_toTopOf="@+id/btn0"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintVertical_weight="1"/>
+        app:layout_constraintBottom_toTopOf="@+id/btn0"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn9"
@@ -216,9 +183,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btn6"
         app:layout_constraintStart_toEndOf="@id/btn8"
         app:layout_constraintEnd_toStartOf="@+id/btnEqual"
-        app:layout_constraintBottom_toTopOf="@+id/btnDot"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintVertical_weight="1"/>
+        app:layout_constraintBottom_toTopOf="@+id/btnDot"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnEqual"
@@ -239,8 +204,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnDot"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_weight="2"
-        app:layout_constraintVertical_weight="1"/>
+        app:layout_constraintHorizontal_weight="2"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnDot"
@@ -249,9 +213,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btn9"
         app:layout_constraintStart_toEndOf="@id/btn0"
         app:layout_constraintEnd_toStartOf="@+id/btnEqual"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintVertical_weight="1"/>
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

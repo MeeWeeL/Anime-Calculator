@@ -3,10 +3,16 @@ package com.example.hw2;
 
 import android.widget.TextView;
 
-public class CalculatorBrain {
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.text.BreakIterator;
+
+public class CalculatorBrain extends AppCompatActivity {
     static String result;
     static String lastResult;
+    static String preLastResult;
     static String move;
+    static String expression = null;
 
     public static String getResult() {
         if (result == null) {
@@ -74,7 +80,7 @@ public class CalculatorBrain {
                 result = "0";
                 break;
             case R.id.btnQuad:
-                movement("x^2");
+                movement("^");
                 break;
             case R.id.btnRoot:
                 movement("Root");
@@ -96,50 +102,39 @@ public class CalculatorBrain {
             result = "0";
         }
     }
+    static void clean(String a) {
+        StringBuilder sb = new StringBuilder(result);
+        if (String.valueOf(sb.charAt(result.length() - 1)).equals("0") && String.valueOf(sb.charAt(result.length() - 2)).equals(".")) {
+            delete();
+            delete();
+        }
+    }
     private static void Equaler() {
         Float num1 = Float.parseFloat(lastResult);
         Float num2 = Float.parseFloat(result);
-        StringBuilder sb;
+        preLastResult = lastResult;
+        lastResult = result;
+
         switch (move) {
             case "+":
                 result = String.valueOf(num1 + num2);
-                sb = new StringBuilder(result);
-                if (String.valueOf(sb.charAt(result.length() - 1)).equals("0") && String.valueOf(sb.charAt(result.length() - 2)).equals(".")) {
-                    delete();
-                    delete();
-                }
+                clean(result);
                 break;
             case "-":
                 result = String.valueOf(num1 - num2);
-                sb = new StringBuilder(result);
-                if (String.valueOf(sb.charAt(result.length() - 1)).equals("0") && String.valueOf(sb.charAt(result.length() - 2)).equals(".")) {
-                    delete();
-                    delete();
-                }
+                clean(result);
                 break;
             case "X":
                 result = String.valueOf(num1 * num2);
-                sb = new StringBuilder(result);
-                if (String.valueOf(sb.charAt(result.length() - 1)).equals("0") && String.valueOf(sb.charAt(result.length() - 2)).equals(".")) {
-                    delete();
-                    delete();
-                }
+                clean(result);
                 break;
             case "/":
                 result = String.valueOf(num1 / num2);
-                sb = new StringBuilder(result);
-                if (String.valueOf(sb.charAt(result.length() - 1)).equals("0") && String.valueOf(sb.charAt(result.length() - 2)).equals(".")) {
-                    delete();
-                    delete();
-                }
+                clean(result);
                 break;
             case "%":
                 result = String.valueOf(num1 * num2 / 100);
-                sb = new StringBuilder(result);
-                if (String.valueOf(sb.charAt(result.length() - 1)).equals("0") && String.valueOf(sb.charAt(result.length() - 2)).equals(".")) {
-                    delete();
-                    delete();
-                }
+                clean(result);
                 break;
             case "Root":
                 if (num2 == 3) {
@@ -147,23 +142,20 @@ public class CalculatorBrain {
                 } else {
                     result = String.valueOf(Math.sqrt(num1));
                 }
-                sb = new StringBuilder(result);
-                if (String.valueOf(sb.charAt(result.length() - 1)).equals("0") && String.valueOf(sb.charAt(result.length() - 2)).equals(".")) {
-                    delete();
-                    delete();
-                }
+                clean(result);
                 break;
-            case "x^2":
+            case "^":
                 result = String.valueOf(quad(num1, num2));
-                sb = new StringBuilder(result);
-                if (String.valueOf(sb.charAt(result.length() - 1)).equals("0") && String.valueOf(sb.charAt(result.length() - 2)).equals(".")) {
-                    delete();
-                    delete();
-                }
+                clean(result);
                 break;
         }
+        expression = preLastResult + " " + move + " " + lastResult + " = " + result;
         move = null;
         lastResult = null;
+    }
+
+    static String getExpression() {
+        return expression;
     }
 
     private static float quad(float num1, float num2) {
